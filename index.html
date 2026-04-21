@@ -122,7 +122,7 @@
                         'bg-lime-400': item.tukar_faktur === 'Done',
                         'bg-rose-500 text-white': item.tukar_faktur === 'Reject'
                       }" class="neo-border px-3 py-1 text-[10px] font-black uppercase mb-1" x-text="item.tukar_faktur"></span>
-                      <span class="text-[9px] font-bold" x-text="item.tanggal_tf || ''"></span>
+                      <span class="text-[9px] font-bold" x-text="formatDate(item.tanggal_tf) || ''"></span>
                     </div>
                   </td>
                   <td class="p-4 text-center" @click.stop>
@@ -191,7 +191,7 @@
             <option value="Reject">Reject</option>
           </select>
         </div>
-        <div class="flex flex-col"><label class="text-[10px] font-black uppercase">Tanggal Tukar Faktur</label><input type="date" x-model="formatDate(formData.tanggal_tf)" class="neo-input font-black"></div>
+        <div class="flex flex-col"><label class="text-[10px] font-black uppercase">Tanggal Tukar Faktur</label><input type="date" x-model="formData.tanggal_tf" class="neo-input font-black"></div>
         
         <div class="md:col-span-2 pt-6">
           <button type="submit" :disabled="loading" class="neo-btn w-full bg-lime-400 py-4 text-2xl font-black italic">
