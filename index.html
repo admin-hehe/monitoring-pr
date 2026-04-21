@@ -57,7 +57,7 @@
               <th class="p-4 border-r border-white/20">Info Kegiatan</th>
               <th class="p-4 border-r border-white/20">Nomor Dokumen</th>
               <th class="p-4 border-r border-white/20 text-right">Total Budget</th>
-              <th class="p-4 border-r border-white/20 text-center">Tukar Faktur</th>
+              <th class="p-4 border-r border-white/20 text-center">Status</th>
               <th class="p-4 text-center">Aksi</th>
             </tr>
           </thead>
@@ -191,7 +191,7 @@
             <option value="Reject">Reject</option>
           </select>
         </div>
-        <div class="flex flex-col"><label class="text-[10px] font-black uppercase">Tanggal Tukar Faktur</label><input type="date" x-model="formData.tanggal_tf" class="neo-input font-black"></div>
+        <div class="flex flex-col"><label class="text-[10px] font-black uppercase">Tanggal Transfer</label><input type="date" x-model="formData.tanggal_tf" class="neo-input font-black"></div>
         
         <div class="md:col-span-2 pt-6">
           <button type="submit" :disabled="loading" class="neo-btn w-full bg-lime-400 py-4 text-2xl font-black italic">
